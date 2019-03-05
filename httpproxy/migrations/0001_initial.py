@@ -32,7 +32,7 @@ class Migration(migrations.Migration):
             name='RequestParameter',
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
-                ('type', models.CharField(default=b'G', max_length=1, choices=[(b'G', b'GET'), (b'P', b'POST')])),
+                ('type', models.CharField(default='G', max_length=1, choices=[('G', 'GET'), ('P', 'POST')])),
                 ('order', models.PositiveSmallIntegerField(default=1)),
                 ('name', models.CharField(max_length=100, verbose_name='naam')),
                 ('value', models.CharField(max_length=250, null=True, verbose_name='value', blank=True)),
